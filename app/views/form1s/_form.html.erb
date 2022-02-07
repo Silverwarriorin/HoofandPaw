@@ -1,0 +1,127 @@
+<%= form_with(model: form1) do |form| %>
+  <% if form1.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(form1.errors.count, "error") %> prohibited this form1 from being saved:</h2>
+
+      <ul>
+        <% form1.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :farmfee, style: "display: block" %>
+    <%= form.text_field :farmfee %>
+  </div>
+
+  <div>
+    <%= form.label :sharedfee, style: "display: block" %>
+    <%= form.text_field :sharedfee %>
+  </div>
+
+  <div>
+    <%= form.label :emergencyfee, style: "display: block" %>
+    <%= form.text_field :emergencyfee %>
+  </div>
+
+  <div>
+    <%= form.label :consultationfee, style: "display: block" %>
+    <%= form.text_field :consultationfee %>
+  </div>
+
+  <div>
+    <%= form.label :generalexam, style: "display: block" %>
+    <%= form.text_field :generalexam %>
+  </div>
+
+  <div>
+    <%= form.label :wellnessexam, style: "display: block" %>
+    <%= form.text_field :wellnessexam %>
+  </div>
+
+  <div>
+    <%= form.label :medicalprogressexam, style: "display: block" %>
+    <%= form.text_field :medicalprogressexam %>
+  </div>
+
+  <div>
+    <%= form.label :insuranceexam, style: "display: block" %>
+    <%= form.text_field :insuranceexam %>
+  </div>
+
+  <div>
+    <%= form.label :healthcertificate, style: "display: block" %>
+    <%= form.text_field :healthcertificate %>
+  </div>
+
+  <div>
+    <%= form.label :prepurchaseexam, style: "display: block" %>
+    <%= form.text_field :prepurchaseexam %>
+  </div>
+
+  <div>
+    <%= form.label :colicexam, style: "display: block" %>
+    <%= form.text_field :colicexam %>
+  </div>
+
+  <div>
+    <%= form.label :colicexam_rectal, style: "display: block" %>
+    <%= form.text_field :colicexam_rectal %>
+  </div>
+
+  <div>
+    <%= form.label :respiratoryexam, style: "display: block" %>
+    <%= form.text_field :respiratoryexam %>
+  </div>
+
+  <div>
+    <%= form.label :sheathexam_cleaning, style: "display: block" %>
+    <%= form.text_field :sheathexam_cleaning %>
+  </div>
+
+  <div>
+    <%= form.label :ophthalmicexam, style: "display: block" %>
+    <%= form.text_field :ophthalmicexam %>
+  </div>
+
+  <div>
+    <%= form.label :woundexam, style: "display: block" %>
+    <%= form.text_field :woundexam %>
+  </div>
+
+  <div>
+    <%= form.label :lf, style: "display: block" %>
+    <%= form.check_box :lf %>
+  </div>
+
+  <div>
+    <%= form.label :rf, style: "display: block" %>
+    <%= form.check_box :rf %>
+  </div>
+
+  <div>
+    <%= form.label :lh, style: "display: block" %>
+    <%= form.check_box :lh %>
+  </div>
+
+  <div>
+    <%= form.label :rh, style: "display: block" %>
+    <%= form.check_box :rh %>
+  </div>
+
+  <div>
+    <%= form.label :horse, style: "display: block" %>
+    <%= form.text_field :horse %>
+  </div>
+
+  <div>
+    <%= form.label :time, style: "display: block" %>
+    <%= form.text_field :time %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

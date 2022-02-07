@@ -1,0 +1,41 @@
+<p style="color: green"><%= notice %></p>
+
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+</style>
+
+<h1>Form1s</h1>
+
+
+<%= link_to "New form1", new_form1_path %>
+<div id="form1s">
+  <% @form1s.each do |form1| %>
+    <table>
+      <tr>
+        <td><b><u>Call/Professional Fees</u></b><br>
+          122 Farm <u><%= form1.farmfee %></u> 126 Shared <u><%= form1.sharedfee %></u><br>
+          127 Emergency fee <u><%= form1.emergencyfee %></u><br>
+        136 Consultation <u><%= form1.consultationfee %></u><br>
+        <br>
+        <b><u>Professional Examinations</u></b><br>
+        100 General Exam <u><%= form1.generalexam %></u><br>
+        1101 Wellness Exam <u><%= form1.wellnessexam %></u><br>
+        102 Medical Progress Exam <u><%= form1.medicalprogressexam %></u><br>
+        108 Insurance Exam <u><%= form1.insuranceexam %></u><br>
+        106 Health Certificate <u><%= form1.healthcertificate %></u><br>
+        172 Prepurchase Exam <u><%= form1.prepurchaseexam %></u><br>
+        2806 Colic Exam <u><%= form1.colicexam %></u><br>
+        2803 Colic Exam w/Rectal <u><%= form1.colicexam_rectal %></u><br>
+        5930 Respiratory Exam <u><%= form1.respiratoryexam %></u><br></td>
+
+        <!--- TODO Add the rest of the lines for the table, add a blank line if the value is nil or empty--->
+
+        <!--- FIXME Left align the text in the table, right align the number in the table --->
+        <td>Lameness Exam <%= form1.lf %></td>
+      </tr>
+    </table>
+  <% end %>
+</div>

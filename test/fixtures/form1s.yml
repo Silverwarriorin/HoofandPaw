@@ -1,0 +1,49 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  farmfee: 9.99
+  sharedfee: 9.99
+  emergencyfee: 9.99
+  consultationfee: 9.99
+  generalexam: 9.99
+  wellnessexam: 9.99
+  medicalprogressexam: 9.99
+  insuranceexam: 9.99
+  healthcertificate: 9.99
+  prepurchaseexam: 9.99
+  colicexam: 9.99
+  colicexam_rectal: 9.99
+  respiratoryexam: 9.99
+  sheathexam_cleaning: 9.99
+  ophthalmicexam: 9.99
+  woundexam: 9.99
+  lf: false
+  rf: false
+  lh: false
+  rh: false
+  horse: MyString
+  time: MyString
+
+two:
+  farmfee: 9.99
+  sharedfee: 9.99
+  emergencyfee: 9.99
+  consultationfee: 9.99
+  generalexam: 9.99
+  wellnessexam: 9.99
+  medicalprogressexam: 9.99
+  insuranceexam: 9.99
+  healthcertificate: 9.99
+  prepurchaseexam: 9.99
+  colicexam: 9.99
+  colicexam_rectal: 9.99
+  respiratoryexam: 9.99
+  sheathexam_cleaning: 9.99
+  ophthalmicexam: 9.99
+  woundexam: 9.99
+  lf: false
+  rf: false
+  lh: false
+  rh: false
+  horse: MyString
+  time: MyString
